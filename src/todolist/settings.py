@@ -11,6 +11,16 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+# For local testing
+from dotenv import load_dotenv
+load_dotenv()
+
+print("SECRET_KEY:", os.environ.get("SECRET_KEY"))
+print("DB_NAME:", os.environ.get("DB_NAME"))
+print("DB_USER:", os.environ.get("DB_USER"))
+print("DB_PASSWORD:", os.environ.get("DB_PASSWORD"))
+print("DB_HOST:", os.environ.get("DB_HOST"))
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -76,6 +86,7 @@ DATABASES = {
         'PORT': '',  # Leave this empty to use the default MySQL port (3306).
     }
 }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

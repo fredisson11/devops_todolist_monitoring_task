@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 
 # For local testing
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 

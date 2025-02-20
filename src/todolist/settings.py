@@ -15,14 +15,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-print("SECRET_KEY:", os.environ.get("SECRET_KEY"))
-print("DB_NAME:", os.environ.get("DB_NAME"))
-print("DB_USER:", os.environ.get("DB_USER"))
-print("DB_PASSWORD:", os.environ.get("DB_PASSWORD"))
-print("DB_HOST:", os.environ.get("DB_HOST"))
-
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/

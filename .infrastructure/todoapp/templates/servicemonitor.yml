@@ -15,3 +15,6 @@ spec:
     - port: {{ .Values.serviceMonitor.port }}
       path: {{ .Values.serviceMonitor.path }}
       interval: {{ .Values.serviceMonitor.interval }}
+  namespaceSelector:
+    matchNames:
+      - {{ .Chart.Name }}

@@ -1,5 +1,2 @@
 **/.env
 .venv/
-venv/
-kube-prometheus-stack/
-.python-version
